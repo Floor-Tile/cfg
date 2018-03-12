@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Museums of the World </title>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="content.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+<!--<div id='image' class='img size'>
+<img src='dev.jpg'>
+</div>
+-->
+  <header>
+    <div class="col-sm-8">
+  <h1>Museums of the World</h1>
+</div>
+
+  <ul>
+    <li><a href="Home"> Home </a></li>
+    <li><a href="About"> About </a></li>
+    <li><a href="Map"> Map </a></li>
+    <li><a href="City Guides"> City Guides </a></li>
+    <li><a href="Contact"> Contact </a></li>
+  </ul>
+
+  </header>
+
+
+  <div id="map"></div>
+  <script>
+  function initMap() {
+    var london = {lat: 51.503861, lng: -0.141375};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: london
+      });
+    }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW4QWm61BU-EdgXQvKIVaMR3ZCc-n4jac&callback=initMap">
+    </script>
+
+
+
+    <div class='jumbotron'>
+
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+      <form role='form'>
+        <label for="email">Find out more</label>
+        <input type="text" name="email" >
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    </div>
+
+
+  </body>
+</html>
