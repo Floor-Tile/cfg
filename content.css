@@ -1,12 +1,10 @@
-#map {
-  height: 400px;
-  width: 100%;
-}
 
 body{
   background-color: white;
   background-image: url("dev.jpg");
   background-size: cover;
+  background-position: center;
+  padding: 650px 0px 0px 0px
 }
 
 header{
@@ -15,8 +13,28 @@ header{
   font-family: helvetica;
 }
 
+li{
+  display: inline;
+  padding: 0px 10px 0px 10px;
+  border-color: white;
+  border-style: double;
+  border-width: 3px;
+}
+
+h1{
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  font-family: helvetica;
+  padding: 10px 10px 10px 10px;
+  border-color: white;
+  border-style: double;
+  border-width: 5px;
+}
+
 ul{
-  padding: 100px;
+  padding: 10px;
+  font-size: 30px;
 }
 
 a{
@@ -24,14 +42,22 @@ a{
   font-family: helvetica;
 }
 
-li{
-  display: inline;
-  padding: 0px 10px 0px 10px;
+p{
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  font-family: helvetica;
 }
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
 .fa {
     padding: 20px;
-    font-size: 30px;
-    width: 30px;
+    font-size: 50px;
+    width: 50px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
