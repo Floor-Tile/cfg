@@ -15,9 +15,6 @@ header{
 li{
   display: inline;
   padding: 0px 10px 0px 10px;
-  border-color: white;
-  border-style: double;
-  border-width: 3px;
 }
 
 h1{
@@ -26,9 +23,6 @@ h1{
   color: white;
   font-family: 'Bungee Outline', cursive;
   padding: 10px 10px 10px 10px;
-  border-color: white;
-  border-style: double;
-  border-width: 5px;
 }
 
 ul{
