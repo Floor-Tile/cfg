@@ -10,7 +10,6 @@ body{
 header{
   text-align: center;
   color: white;
-  font-family: helvetica;
 }
 
 li{
@@ -25,7 +24,7 @@ h1{
   font-size: 80px;
   text-align: center;
   color: white;
-  font-family: helvetica;
+  font-family: 'Bungee Outline', cursive;
   padding: 10px 10px 10px 10px;
   border-color: white;
   border-style: double;
