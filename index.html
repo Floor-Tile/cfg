@@ -29,9 +29,9 @@
 
     <div class="collapse navbar-collapse">
     <ul class="nav navbar-nav navbar-right">
-        <li><a href="#buzz">Home</a></li>
-        <li><a href="#mission">About</a></li>
-        <li><a href="#Map">Map</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#map">Map</a></li>
         <li><a href="#cities">City Guides</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -52,7 +52,13 @@
   <p>A few sentences about the project. A few sentences about the project. A few sentences about the project</p>
 </div>
 
-  <div id="map"></div>
+<div class="Map">
+      <h1> Map <h1>
+</div>
+
+<div id="map">
+    </div>
+
   <script>
   function initMap() {
     var vanda = {lat: 51.496666, lng: -0.172234};
@@ -89,22 +95,23 @@
 
     }
     </script>
+
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW4QWm61BU-EdgXQvKIVaMR3ZCc-n4jac&callback=initMap">
     </script>
 
     <div class='jumbotron'>
-
-  <a href="#" class="fa fa-facebook"></a>
-  <a href="#" class="fa fa-twitter"></a>
+      <h1> Get In Touch! </h1>
+  <a href="#Facebook" class="fa fa-facebook"></a>
+  <a href="#Twitter" class="fa fa-twitter"></a>
 
       <form role='form'>
-        <label for="email">Find out more</label>
+        <label for="email">Subscribe here:</label>
         <input type="text" name="email" >
-        <button type="submit">Submit</button>
+        <button type="submit">Submit!</button>
       </form>
-
     </div>
+
   </div>
   <script src="js/jquery-3.3.1.min.js"></script>
   </body>
