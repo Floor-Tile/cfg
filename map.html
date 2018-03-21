@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
     <div class="navbar-header">
@@ -37,25 +38,54 @@
   </nav>
 
     <div class="container">
-
-  <header>
-  <h1>Museums of the World</h1>
-  </header>
-
-
-    <div class='jumbotron'>
-      <h1> Get In Touch! </h1>
-  <a href="Facebook" class="fa fa-facebook"></a>
-  <a href="Twitter" class="fa fa-twitter"></a>
-
-      <form role='form'>
-        <label for="email">Subscribe here:</label>
-        <input type="text" name="email" >
-        <button type="submit">Submit!</button>
-      </form>
-    </div>
-
+  <div class="Map">
+        <h1> Map <h1>
   </div>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  </body>
+
+  <div id="map">
+      </div>
+
+    <script>
+    function initMap() {
+      var vanda = {lat: 51.496666, lng: -0.172234};
+      var pompidou = {lat: 48.860508, lng: 2.352363};
+      var yves = {lat: 31.642478, lng: -8.003249};
+      var cambridge = {lat: 52.211080, lng: 0.114524};
+
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 2,
+        center: vanda
+        });
+        var marker = new google.maps.Marker({
+          position: vanda,
+          map: map,
+          title: 'V & A Museum, London'
+        });
+        var marker1 = new google.maps.Marker({
+          position: pompidou,
+          map: map,
+          title: 'Pompidou Centre, Paris'
+        });
+        var marker2 = new google.maps.Marker({
+          position: yves,
+          map: map,
+          title: 'Jardin Marjorelle, Marrakech'
+        });
+        var marker3 = new google.maps.Marker({
+          position: cambridge,
+          map: map,
+          title: 'Kettles Yard, Cambridge'
+        });
+
+
+      }
+      </script>
+
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW4QWm61BU-EdgXQvKIVaMR3ZCc-n4jac&callback=initMap">
+      </script>
+</div>
+</body>
+
 </html>
