@@ -1,7 +1,7 @@
 
 body{
   background-color: white;
-  background-image: url("dev.jpg");
+  background-image: url("museum.jpg");
   background-size: cover;
   background-position: center;
   padding: 200px 0px 0px 0px
@@ -10,26 +10,19 @@ body{
 header{
   text-align: center;
   color: white;
-  font-family: helvetica;
 }
 
 li{
   display: inline;
   padding: 0px 10px 0px 10px;
-  border-color: white;
-  border-style: double;
-  border-width: 3px;
 }
 
 h1{
   font-size: 80px;
   text-align: center;
   color: white;
-  font-family: helvetica;
+  font-family: 'Bungee Outline', cursive;
   padding: 10px 10px 10px 10px;
-  border-color: white;
-  border-style: double;
-  border-width: 5px;
 }
 
 ul{
@@ -39,24 +32,49 @@ ul{
 
 a{
   color: white;
-  font-family: helvetica;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.nav li a{
+  font-size: 25px;
+}
+
+.navbar-header a{
+  font-family: 'Bungee Outline', cursive;
+  font-size: 40px;
+  padding: 25px 0px 0px 10px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.navbar{
+  background-color: #D6D6D6;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.7;
+  filter: alpha(opacity=60);
+}
+.navbar-collapse {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 p{
   font-size: 25px;
   text-align: center;
   color: white;
-  font-family: helvetica;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #map {
-  height: 400px;
+  height: 500px;
   width: 100%;
 }
 
 .fa {
     padding: 20px;
-    font-size: 100px;
     width: 50px;
     text-align: center;
     text-decoration: none;
@@ -65,4 +83,12 @@ p{
 
 .jumbotron{
   background-color: transparent;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.jumbotron .fa{
+  font-size: 50px;
 }

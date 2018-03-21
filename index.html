@@ -2,60 +2,117 @@
 <html>
 <head>
   <title>Museums of the World </title>
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <link href='css/bootstrap.css' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="content.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Open+Sans+Condensed:300" rel="stylesheet">
   <style>
-
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Site Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#nav-title">Museums of the World</a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#cities">City Guides</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      </div>
+
+  </nav>
+    <div class="container">
+
   <header>
-    <ul>
-      <li><a href="Home"> Home </a></li>
-      <li><a href="About"> About </a></li>
-      <li><a href="Map"> Map </a></li>
-      <li><a href="City Guides"> City Guides </a></li>
-      <li><a href="Contact"> Contact </a></li>
-    </ul>
-
   <h1>Museums of the World</h1>
-
   </header>
 
   <p>
     Welcome to our comprehensive guide to some of our favourite museums and cities!
   </p>
+<div class="About">
+  <h1>About</h1>
+  <p>A few sentences about the project. A few sentences about the project. A few sentences about the project</p>
+</div>
 
+<div class="Map">
+      <h1> Map <h1>
+</div>
 
-  <div id="map"></div>
+<div id="map">
+    </div>
+
   <script>
   function initMap() {
-    var london = {lat: 51.503861, lng: -0.141375};
+    var vanda = {lat: 51.496666, lng: -0.172234};
+    var pompidou = {lat: 48.860508, lng: 2.352363};
+    var yves = {lat: 31.642478, lng: -8.003249};
+    var cambridge = {lat: 52.211080, lng: 0.114524};
+
+
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 4,
-      center: london
+      zoom: 2,
+      center: vanda
       });
+      var marker = new google.maps.Marker({
+        position: vanda,
+        map: map,
+        title: 'V & A Museum, London'
+      });
+      var marker1 = new google.maps.Marker({
+        position: pompidou,
+        map: map,
+        title: 'Pompidou Centre, Paris'
+      });
+      var marker2 = new google.maps.Marker({
+        position: yves,
+        map: map,
+        title: 'Jardin Marjorelle, Marrakech'
+      });
+      var marker3 = new google.maps.Marker({
+        position: cambridge,
+        map: map,
+        title: 'Kettles Yard, Cambridge'
+      });
+
+
     }
     </script>
+
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW4QWm61BU-EdgXQvKIVaMR3ZCc-n4jac&callback=initMap">
     </script>
 
     <div class='jumbotron'>
-
-  <a href="#" class="fa fa-facebook"></a>
-  <a href="#" class="fa fa-twitter"></a>
+      <h1> Get In Touch! </h1>
+  <a href="#Facebook" class="fa fa-facebook"></a>
+  <a href="#Twitter" class="fa fa-twitter"></a>
 
       <form role='form'>
-        <label for="email">Find out more</label>
+        <label for="email">Subscribe here:</label>
         <input type="text" name="email" >
-        <button type="submit">Submit</button>
+        <button type="submit">Submit!</button>
       </form>
-
     </div>
+
   </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
   </body>
 </html>
