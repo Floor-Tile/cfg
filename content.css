@@ -1,7 +1,7 @@
 
 body{
   background-color: white;
-  background-image: url("pool.jpg");
+  background-image: url("museum.jpg");
   background-size: cover;
   background-position: center;
   padding: 200px 0px 0px 0px
@@ -37,6 +37,17 @@ a{
 
 .nav li a{
   font-size: 25px;
+}
+
+.navbar-header a{
+  font-family: 'Bungee Outline', cursive;
+  font-size: 30px;
+}
+
+.navbar {
+  background-color: #802E23;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
 }
 
 p{
