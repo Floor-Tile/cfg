@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Museums of the World </title>
+  <title>Map</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Open+Sans+Condensed:300" rel="stylesheet">
   <link href='css/bootstrap.css' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="content.css">
@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+  <!-- NAVIGATION -->
 
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
@@ -23,69 +25,227 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#nav-title">Museums of the World</a>
+      <a class="navbar-brand" href="#nav-title">Muse</a>
     </div>
 
     <div class="collapse navbar-collapse">
-    <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="map.html">Map</a></li>
+        <li><a href="map.html">Map & Guides</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      </div>
+    </div>
 
   </nav>
-
-    <div class="container">
   <div class="Map">
-        <h1> Map <h1>
-  </div>
+    <h1> Map <h1>
+    </div>
 
-  <div id="map">
-      </div>
+    <div id="map">
+    </div>
 
     <script>
     function initMap() {
+      var centre = {lat: 10.000000, lng: 23.318239};
       var vanda = {lat: 51.496666, lng: -0.172234};
       var pompidou = {lat: 48.860508, lng: 2.352363};
       var yves = {lat: 31.642478, lng: -8.003249};
       var cambridge = {lat: 52.211080, lng: 0.114524};
-
+      var turin = {lat: 45.068384, lng: 7.684122};
+      var amsterdam = {lat: 52.259945, lng: 4.885154};
+      var riga = {lat: 56.959579, lng: 24.108517};
+      var zagreb = {lat: 45.814989, lng: 15.973434};
+      var stockholm = {lat: 59.325818, lng: 18.084768};
+      var kanazawa = {lat: 36.561069, lng: 136.658193};
+      var nyc = {lat: 40.718853, lng: -73.990102};
+      var washington = {lat: 38.891165, lng: -77.032603};
+      var california = {lat: 34.064066, lng: -118.359229};
+      var mexico = {lat: 19.355335, lng: -99.162525};
+      var argentina = {lat: -34.908860, lng: -57.935417};
+      var moscow = {lat: 55.727848, lng: 37.601624};
+      var russia = {lat: 59.939966, lng: 30.314517};
+      var delhi = {lat: 28.585882, lng: 77.179732};
+      var hochiminh = {lat: 10.779481, lng: 106.692159};
+      var shanghai = {lat: 31.231516, lng: 121.472769};
+      var berlin = {lat: 52.506415, lng: 13.353818};
+      var sibiu = {lat: 45.796124, lng: 24.149878};
+      var auckland = {lat: -36.851191, lng: 174.766237};
+      var sydney = {lat: -33.859740, lng: 151.209019};
+      var southafrica = {lat: -33.908133, lng: 18.422971};
 
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 2,
-        center: vanda
-        });
-        var marker = new google.maps.Marker({
-          position: vanda,
-          map: map,
-          title: 'V & A Museum, London'
-        });
-        var marker1 = new google.maps.Marker({
-          position: pompidou,
-          map: map,
-          title: 'Pompidou Centre, Paris'
-        });
-        var marker2 = new google.maps.Marker({
-          position: yves,
-          map: map,
-          title: 'Jardin Marjorelle, Marrakech'
-        });
-        var marker3 = new google.maps.Marker({
-          position: cambridge,
-          map: map,
-          title: 'Kettles Yard, Cambridge'
-        });
+        center: centre,
+      });
+      var marker = new google.maps.Marker({
+        position: vanda,
+        map: map,
+        title: 'V & A Museum, London'
+      });
+      var marker1 = new google.maps.Marker({
+        position: pompidou,
+        map: map,
+        title: 'Pompidou Centre, Paris'
+      });
+      var marker2 = new google.maps.Marker({
+        position: yves,
+        map: map,
+        title: 'Jardin Marjorelle, Marrakech'
+      });
+      var marker3 = new google.maps.Marker({
+        position: cambridge,
+        map: map,
+        title: 'Kettles Yard, Cambridge'
+      });
+      var marker4 = new google.maps.Marker({
+        position: turin,
+        map: map,
+        title: 'Egyptology Museum, Turin'
+      });
+      var marker5 = new google.maps.Marker({
+        position: amsterdam,
+        map: map,
+        title: 'The Rijkmuseum, Amsterdam'
+      });
+      var marker6 = new google.maps.Marker({
+        position: riga,
+        map: map,
+        title: 'Art Nouveau Museum, Riga'
+      });
+      var marker7 = new google.maps.Marker({
+        position: zagreb,
+        map: map,
+        title: 'Museum of Broken Relationships, Zagreb'
+      });
+      var marker8 = new google.maps.Marker({
+        position: stockholm,
+        map: map,
+        title: 'Arkdes, Stockholm'
+      });
+      var marker9 = new google.maps.Marker({
+        position: kanazawa,
+        map: map,
+        title: '21st Century Museum of Contemporary Art, Kanazawa'
+      });
+      var marker10 = new google.maps.Marker({
+        position: nyc,
+        map: map,
+        title: 'The Tenement Museum, New York'
+      });
+      var marker11 = new google.maps.Marker({
+        position: washington,
+        map: map,
+        title: 'The African American History Museum, Washington D. C.'
+      });
+      var marker12 = new google.maps.Marker({
+        position: california,
+        map: map,
+        title: 'Los Angeles County Museum of Art, Los Angeles'
+      });
+      var marker13 = new google.maps.Marker({
+        position: mexico,
+        map: map,
+        title: 'Frida Kahlo Museum, Mexico City'
+      });
+      var marker14 = new google.maps.Marker({
+        position: argentina,
+        map: map,
+        title: 'Museo de la Plata, Buenos Aires'
+      });
+      var marker15 = new google.maps.Marker({
+        position: moscow,
+        map: map,
+        title: 'Garage Museum, Moscow'
+      });
+      var marker16 = new google.maps.Marker({
+        position: russia,
+        map: map,
+        title: 'Hermitage Museum, St. Petersburg'
+      });
+      var marker17 = new google.maps.Marker({
+        position: delhi,
+        map: map,
+        title: 'National Rail Museum, Delhi'
+      });
+      var marker18 = new google.maps.Marker({
+        position: hochiminh,
+        map: map,
+        title: 'War Remnants Museum, Ho Chi Minh City'
+      });
+      var marker19 = new google.maps.Marker({
+        position: shanghai,
+        map: map,
+        title: 'Contemporary Art Museum, Shanghai'
+      });
+      var marker20 = new google.maps.Marker({
+        position: berlin,
+        map: map,
+        title: 'Bauhaus Archiv, Berlin'
+      });
+      var marker21 = new google.maps.Marker({
+        position: sibiu,
+        map: map,
+        title: 'Brukenthal Museum, Sibiu'
+      });
+      var marker22 = new google.maps.Marker({
+        position: auckland,
+        map: map,
+        title: 'Auckland Art Gallery, Auckland'
+      });
+      var marker23 = new google.maps.Marker({
+        position: sydney,
+        map: map,
+        title: 'Museum of Contemporary Art, Sydney'
+      });
+      var marker24 = new google.maps.Marker({
+        position: southafrica,
+        map: map,
+        title: 'Zeitz MOCAA, Cape Town'
+      });
+    }
+    </script>
 
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW4QWm61BU-EdgXQvKIVaMR3ZCc-n4jac&callback=initMap">
+    </script>
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
 
-      }
-      </script>
+          <div class="col-lg-6 col-md-6">
 
-      <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW4QWm61BU-EdgXQvKIVaMR3ZCc-n4jac&callback=initMap">
-      </script>
-</div>
-</body>
+            <div class="foot-left">
+              <p> Get In Touch! </p>
 
-</html>
+              <a href="#Facebook" class="fa fa-facebook"></a>
+              <a href="#Twitter" class="fa fa-twitter"></a>
+              <a href="#Instagram" class="fa fa-instagram"></a>
+              <a href="#Pinterest" class="fa fa-pinterest"></a>
+
+              <form role='form'>
+                <label for="email">Subscribe here:</label>
+                <input type="text" name="email" >
+                <button type="submit">Submit!</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="foot-right">
+              <h3>Address</h3>
+              <p>Code First Girls HQ</p>
+              <p>In the bar on the 5th Floor</p>
+              <p>London</p>
+              <p>W1W 7RT</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  </html>
