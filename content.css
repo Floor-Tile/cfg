@@ -78,7 +78,7 @@ ul{
   text-align: left;
 }
 
-h1{
+.carousel-caption h1{
   font-size: 200px;
   font-weight: bold;
   text-align: center;
@@ -116,8 +116,35 @@ h2{
   clear: both;
 }
 
+/* ABOUT */
+
+.about-header h1{
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px silver;
+  font-family: 'Bungee Outline', cursive;
+  margin-top: 330px;
+}
+
+body {
+  background-size: cover;
+  height: 100%
+}
 
 /* MAP */
+
+.map-header h1{
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px silver;
+  font-family: 'Bungee Outline', cursive;
+  margin-top: 100px;
+}
+
 #map {
   height: 700px;
   width: 100%;
@@ -140,11 +167,24 @@ h2{
   font-weight: bold;
 }
 
+/* CONTACT */
+
+.contact-header h1{
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px silver;
+  font-family: 'Bungee Outline', cursive;
+  margin-top: 100px;
+}
+
 /* FOOTER */
 
 .footer {
   left: 0;
   bottom: 0;
+  right: 0;
   width: 100%;
   background-color: grey;
   color: white;
